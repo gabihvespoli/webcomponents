@@ -1,0 +1,9 @@
+// TODO: P/ WEB-COMPONENT
+{
+  "extends": "../../../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../../../out-tsc/app",
+    "types": []
+  },
+  "files": ["./pokemon-card.main.ts", "../../../polyfills.ts"]
+}

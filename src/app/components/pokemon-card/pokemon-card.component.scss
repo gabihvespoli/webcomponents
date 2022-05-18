@@ -1,0 +1,34 @@
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+.pokemon {
+  background-color: #333333;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  border-radius: 8px;
+  border: 2px solid #222222;
+  box-shadow: 8px 8px 10px 0px #333333;
+
+  &__sprite {
+    width: 250px;
+    height: auto;
+  }
+
+  &__name {
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin: 0 0 1rem 0;
+  }
+
+  &__stats-container {
+    width: 100%;
+  }
+}

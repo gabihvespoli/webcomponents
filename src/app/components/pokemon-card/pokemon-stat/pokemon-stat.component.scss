@@ -1,0 +1,49 @@
+.pokemon-stat {
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  line-height: 1.5rem;
+
+  &__name {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+  }
+
+  &__value {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    &--hp {
+      color: #ff5959;
+    }
+
+    &--attack {
+      color: #f5ac78;
+    }
+
+    &--defense {
+      color: #fae078;
+    }
+
+    &--special-attack {
+      color: #9db7f5;
+    }
+
+    &--special-defense {
+      color: #a7db8d;
+    }
+
+    &--speed {
+      color: #fa92b2;
+    }
+
+    &--evasion {
+      color: #bac;
+    }
+  }
+}

@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:pokemon-card": "ng build pokemon-card && jscat ./dist/pokemon-card/runtime.js ./dist/pokemon-card/polyfills.js ./dist/pokemon-card/main.js > dist/pokemon-card/pokemon-card.js"
   },
   "private": true,
   "dependencies": {
@@ -14,6 +15,7 @@
     "@angular/common": "~13.3.0",
     "@angular/compiler": "~13.3.0",
     "@angular/core": "~13.3.0",
+    "@angular/elements": "^13.3.8",
     "@angular/forms": "~13.3.0",
     "@angular/platform-browser": "~13.3.0",
     "@angular/platform-browser-dynamic": "~13.3.0",
@@ -29,6 +31,7 @@
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "jasmine-core": "~4.0.0",
+    "jscat": "^0.0.2",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.1.0",

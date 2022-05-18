@@ -1,0 +1,11 @@
+<aside class="pokemon-stat">
+  <p class="pokemon-stat__name">
+    {{ pokemonStatMap.get(pokemonStat.stat.name) }}
+  </p>
+  <p
+    class="pokemon-stat__value"
+    [ngClass]="'pokemon-stat__value--' + pokemonStat.stat.name"
+  >
+    {{ pokemonStat.base_stat }}
+  </p>
+</aside>

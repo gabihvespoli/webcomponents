@@ -4,7 +4,7 @@ Projeto gerado com o [Angular CLI](https://github.com/angular/angular-cli) versi
 
 ## Build
 
-Run `build:pokemon-card` do projeto e utilização como webcomponent.
+Run `build:pokemon-card` para build do projeto e utilização como webcomponent.
 
 Run `npx http-server ./dist/pokemon-card`. Navegar para `http://localhost:8080/`.
 

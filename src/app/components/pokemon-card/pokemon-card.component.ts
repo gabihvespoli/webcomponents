@@ -18,7 +18,8 @@ import {
 })
 export class PokemonCardComponent implements OnInit {
   @Input('pokemon') pokemonName!: string;
-  @Output('onPokemonClick') onPokemonClick: EventEmitter<any> =
+  // Apenas exemplo
+  @Output('onPokemonLoad') onPokemonLoad: EventEmitter<any> =
     new EventEmitter();
 
   public pokemon$!: Observable<any>;
@@ -27,5 +28,6 @@ export class PokemonCardComponent implements OnInit {
 
   ngOnInit(): void {
     this.pokemon$ = this._pokemon.getPokemon(this.pokemonName);
+    this.onPokemonLoad.emit(null);
   }
 }
